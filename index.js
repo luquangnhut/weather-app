@@ -24,7 +24,7 @@ const windSpeed = document.querySelector('.wind-speed');
         sunset.innerHTML=moment.unix(predata.sys.sunset).format(`H:mm`)||Default;
         hunidity.innerHTML=Math.round(predata.main.humidity)+' %'||Default;
         windSpeed.innerHTML=(predata.wind.speed*3.6).toFixed(2)+' km/h'||Default;
-        feelLike.innerHTML='Feels like: '+Math.round(predata.main.feels_like)||Default;
+        feelLike.innerHTML='Nhiệt độ cảm thấy thực tế : '+Math.round(predata.main.feels_like)||Default;
     })
 
 
@@ -41,7 +41,7 @@ searchInput.addEventListener('change', (e) => {
         sunset.innerHTML=moment.unix(data.sys.sunset).format(`H:mm`)||Default;
         hunidity.innerHTML=Math.round(data.main.humidity)+' %'||Default;
         windSpeed.innerHTML=(data.wind.speed*3.6).toFixed(2)+' km/h'||Default;
-        feelLike.innerHTML='Feels like: '+Math.round(data.main.feels_like)||Default;
+        feelLike.innerHTML='Nhiệt độ cảm thấy thực tế : '+Math.round(data.main.feels_like)||Default;
         
         
     });
