@@ -1,0 +1,113 @@
+*{
+    padding:0;
+    margin:0;
+    font-size: 14px;
+}
+.container{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background: linear-gradient(#2193d0,#6dd5ed);
+    width: 400px;
+    margin:50px auto;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.search-bar{
+    width:50%;
+    margin:0 auto;
+    padding-top: 30px;
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+}
+.search-icon{
+    margin-right: 5px;
+    position:absolute;
+    left:0
+}
+#search-input{
+    color:white;
+    border:0;
+    outline:0;
+    padding:3px 3px 3px 20px;
+    background: transparent ;
+    height: 20px;
+}
+#search-input::placeholder{
+    color:rgb(211, 211, 211);
+}
+.infor-wrapper{
+    padding-top:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding-inline-end: 80px 30px;
+}
+.city-name{
+    font-size: 30px;
+    margin-top:80px;
+    margin-bottom: 10px;
+}
+.weather-state{
+    font-size:16px;
+    padding-top: 20px;
+    font-weight: 200;
+}
+.weather-state:first-letter {
+    text-transform: capitalize
+  }
+.weather-icon{
+    width: 90px;
+    height: 90px;
+}
+.temperature{
+    padding-top: 30px;
+    font-size:100px;
+    font-weight: 100;
+    line-height: 1;
+    position: relative;
+}
+.temperature::after{
+    content:'o';
+    position:absolute;
+    font-size: 30px;
+}
+.feel-like{
+    margin-top:10px;
+    font-size:12px;
+    font-style: italic;
+}
+.feel-like::after{
+    content:'o';
+    position:absolute;
+    font-size: 8px;
+}
+.second-section{
+    margin-top:100px;
+    margin-right: auto ;
+    border-top:1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 20px 0px;
+
+}
+.second-section .row{
+    padding-top:5px ;
+    margin-bottom:10px;
+    display: flex;
+}
+.item{
+    padding-left: 65px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.label{
+    font-weight:bold;
+    margin-bottom:8px;
+}
