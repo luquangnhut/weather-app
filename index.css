@@ -73,7 +73,7 @@
     position: relative;
 }
 .temperature::after{
-    content:'o';
+    content:'°C';
     position:absolute;
     font-size: 30px;
 }
@@ -83,7 +83,7 @@
     font-style: italic;
 }
 .feel-like::after{
-    content:'o';
+    content:'°C';
     position:absolute;
     font-size: 8px;
 }
